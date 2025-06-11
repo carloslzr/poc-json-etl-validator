@@ -1,0 +1,164 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "activo": {
+      "type": "boolean"
+    },
+    "edad": {
+      "type": "integer"
+    },
+    "altura": {
+      "type": "number"
+    },
+    "fecha_registro": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "direccion": {
+      "type": "object",
+      "properties": {
+        "calle": {
+          "type": "string"
+        },
+        "ciudad": {
+          "type": "string"
+        },
+        "codigo_postal": {
+          "type": "string"
+        },
+        "pais": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "calle",
+        "ciudad",
+        "codigo_postal",
+        "pais"
+      ]
+    },
+    "telefonos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tipo": {
+            "type": "string"
+          },
+          "numero": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "numero",
+          "tipo"
+        ]
+      }
+    },
+    "preferencias": {
+      "type": "object",
+      "properties": {
+        "newsletter": {
+          "type": "boolean"
+        },
+        "idioma": {
+          "type": "string"
+        },
+        "temas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "idioma",
+        "newsletter",
+        "temas"
+      ]
+    },
+    "proyectos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          },
+          "estado": {
+            "type": "string"
+          },
+          "progreso": {
+            "type": "number"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "estado",
+          "nombre",
+          "progreso",
+          "tags"
+        ]
+      }
+    },
+    "comentarios": {
+      "type": "null"
+    },
+    "extra": {
+      "type": "object",
+      "properties": {
+        "booleano": {
+          "type": "boolean"
+        },
+        "nulo": {
+          "type": "null"
+        },
+        "numero_decimal": {
+          "type": "number"
+        },
+        "array_mixto": {
+          "type": "array",
+          "items": {
+            "type": [
+              "boolean",
+              "integer",
+              "null",
+              "string"
+            ]
+          }
+        }
+      },
+      "required": [
+        "array_mixto",
+        "booleano",
+        "nulo",
+        "numero_decimal"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "nombre",
+    "activo"
+  ]
+}

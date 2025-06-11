@@ -1,0 +1,6 @@
+pytest
+json
+jsonschema
+genson
+pandas
+pyarrow

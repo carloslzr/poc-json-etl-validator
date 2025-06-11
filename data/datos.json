@@ -1,0 +1,52 @@
+{
+  "id": 12345,
+  "nombre": "Carlos Lázaro",
+  "email": "carlos@example.com",
+  "activo": true,
+  "edad": 36,
+  "altura": 1.82,
+  "fecha_registro": "2024-10-15T12:30:00Z",
+  "roles": ["admin", "editor", "viewer"],
+  "direccion": {
+    "calle": "Calle Falsa 123",
+    "ciudad": "Madrid",
+    "codigo_postal": "28080",
+    "pais": "España"
+  },
+  "telefonos": [
+    {
+      "tipo": "móvil",
+      "numero": "+34 600 123 456"
+    },
+    {
+      "tipo": "fijo",
+      "numero": "+34 912 345 678"
+    }
+  ],
+  "preferencias": {
+    "newsletter": false,
+    "idioma": "es",
+    "temas": ["tecnología", "ciencia", "QA"]
+  },
+  "proyectos": [
+    {
+      "nombre": "Automatización QA",
+      "estado": "en curso",
+      "progreso": 75.5,
+      "tags": ["pytest", "jsonschema", "python"]
+    },
+    {
+      "nombre": "Migración a AWS",
+      "estado": "completado",
+      "progreso": 100,
+      "tags": ["aws", "infraestructura"]
+    }
+  ],
+  "comentarios": null,
+  "extra": {
+    "booleano": false,
+    "nulo": null,
+    "numero_decimal": 12345.6789,
+    "array_mixto": [1, "dos", true, null]
+  }
+}
