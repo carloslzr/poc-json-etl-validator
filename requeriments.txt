@@ -4,3 +4,4 @@ jsonschema
 genson
 pandas
 pyarrow
+pytest-html
