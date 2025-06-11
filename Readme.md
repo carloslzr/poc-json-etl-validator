@@ -69,13 +69,13 @@ pytest -v --html=reports/html_test_report.html --self-contained-html
 ## 🧠 ETL Transformation Rules
 The transformation script applies the following business rules:
 
-user_id: Copied from id
-birth_year: Calculated as 2025 - edad
-height_cm: Height converted from meters to centimeters
-roles_csv: List of roles joined by commas
-address_full: Full address created by joining street, city, postal code, and country
-mobile_phone / landline_phone: Phone numbers split by type
-interests: Preferences joined with |
-project_summary: Each project name combined with its progress in parentheses
-comment_status: If the original comentarios is null, replaced with "no_comments"
-extra_mixed_data: Mixed array converted to a flat string representation
+- user_id: Copied from id
+- birth_year: Calculated as 2025 - edad
+- height_cm: Height converted from meters to centimeters
+- roles_csv: List of roles joined by commas
+- address_full: Full address created by joining street, city, postal code, and country
+- mobile_phone / landline_phone: Phone numbers split by type
+- interests: Preferences joined with |
+- project_summary: Each project name combined with its progress in parentheses
+- comment_status: If the original comentarios is null, replaced with "no_comments"
+- extra_mixed_data: Mixed array converted to a flat string representation
