@@ -6,6 +6,7 @@ This project validates the structure and content of a JSON file against a define
 
 ## 📁 Project Structure
 
+```bash
 ├── data/
 │ ├── datos.json # Input data in JSON format
 │ ├── datos_schema.json # JSON Schema definition
@@ -21,6 +22,7 @@ This project validates the structure and content of a JSON file against a define
 │ └── test_transformacion_parquet.py # Validates ETL transformations
 ├── requeriments.txt 
 └── README.md
+```
 
 ---
 
